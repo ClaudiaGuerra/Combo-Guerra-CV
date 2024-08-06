@@ -5,11 +5,14 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-
     display: flex;
     justify-content:center;
 }
 
+.footer{
+    text-align: center;
+    margin:10px;
+}
 /* -------------- General Styles -------------------*/ 
 .container {
     max-width: 800px;
@@ -36,7 +39,6 @@ body {
     border-radius: 50px;
     position: sticky;
     top: 60px;
-    /* left: -30px; */
 }
 
 .sticky-nav li {
@@ -121,8 +123,8 @@ body {
     border-radius: 30px;
 }
 
-.btn-black:hover {
-    background-color: #fff;
+.btn-black:hover{
+    background-color: white;
     color: black;
     cursor: pointer;
 }
@@ -157,8 +159,8 @@ body {
     padding: 10px;
     margin-bottom: 1px;
     display: flex;
-    flex-direction: row;
-}
+    flex-direction: column;
+ }
 
 .education {
     background-color: #fff;
@@ -166,4 +168,90 @@ body {
     padding: 50px;
     margin-bottom: 1px;
     display: flex;
+}
+
+/* .descripcion{
+    border-bottom: 1px solid rgb(204, 202, 202);
+} */
+
+.descripcion il{
+    list-style-type:circle;
+    text-align: justify;
+
+}
+
+.fechadescripcion{
+    display:flex;
+    flex-direction: row;
+}
+
+.titulo{
+    padding:0px;
+    margin:0px;
+}
+
+.trabajo {
+    margin-left: 15px;
+}
+
+.fecha{
+    /* width: 15%; */
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 50px;
+    text-align: center;
+    width: 80px;
+    height: 36px;
+    font-size:small;
+}
+
+
+/* ----------------------- Contact ---------------*/
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:800px;
+ }
+
+.arriba{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    width: 600px;
+    margin-top: 10px;
+    
+}
+
+.input{
+    border: 1px solid rgb(204, 202, 202);
+    display:flex;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin:2px;
+}
+
+.mensaje{
+    border: 1px solid rgb(204, 202, 202);
+    display:flex;
+    width: 594px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom:2px;
+  
+}
+
+.btn-enviar {
+    background-color: black;
+    color: #fff;
+    padding: 8px;
+    margin:1px; 
+    width: 600px;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+
+.btn-enviar:hover{
+    background-color: rgb(204, 202, 202);
+    color:black;
 }
