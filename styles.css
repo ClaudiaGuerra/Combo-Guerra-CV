@@ -51,6 +51,7 @@ body {
 
 .sticky-nav li:hover {
     background-color: rgba(204, 202, 202, 0.6);
+    border-radius: 10px;
 }
 
 .sticky-nav ul {
@@ -68,6 +69,10 @@ body {
 }
 /* ---------- Personal Information ---------------- */
 
+.subsection h1{
+    padding:0px;
+    margin:0px;
+}
 .dot {
     height: 15px;
     width: 15px;
@@ -89,18 +94,24 @@ body {
 }
 
 .profile {
+    display:flex;
     max-width: 100%;
-    height: 200px;
+    width: 300px;
     border-radius: 15px;
     margin-top: 16px;
 
 }
 
+.profesion-desc{
+    text-decoration: underline;
+    margin:5px;
+    margin-bottom: 25px;
+}
 .p-desc {
     font-size: 28px;
     border-bottom: 1px solid rgb(176, 172, 172);
     padding-bottom: 30px;
-    text-align: justify;
+    text-align:justify;
 }
 
 .btn-black {
