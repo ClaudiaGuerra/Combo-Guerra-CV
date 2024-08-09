@@ -230,13 +230,15 @@
             </div>
         </div> -->
 
-        <div><!--  Contact container -->
-            <div class="section section-title" id="contact">
+                <!-- Este es mi diseño del formulario antes del codigo de emailjs -->
+                 <!--  Contact container -->
+        <!-- <div>
+            <div class="section section-title" id="contacto">
                 <h2>Contact</h2>
             </div>
 
             <div class="section section-content">
-                <div class="form">
+                <div class="form" id="form2">
                     <div class="arriba">
                         <input class="input" id="nombre" placeholder="Nombre"></input>
                         <input class="input" id="correo" placeholder="Correo"></input>
@@ -246,19 +248,49 @@
                     <button class="btn-enviar">Enviar</button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
+ <!-- Contact container -->
         <div>
-            <div class="emailjs" 
-        </div>
+            <div class="section section-title" id="contact">
+                <h2>Contacto</h2>
+            </div>
 
+            <div class="section section-content">
+                <form class="form" id="form">
+                    <div class="arriba">
+                        <div class="field">
+                            <input class="input" id="nombre" placeholder="Nombre" type="text" name="from_name"
+                                id="from_name">
+                        </div>
+                        <div class="field">
+                            <input class="input" id="correo" placeholder="Correo" type="text" name="email_id"
+                                id="email_id">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <input class="mensaje" id="mensaje" placeholder="Mensaje" type="text" name="message" id="message">
+                    </div>
+
+                    <input class="btn-enviar" type="submit" id="button" value="Enviar">
+                </form>
+            </div>
+        </div>     
 
         <!-- <div class="section section-content">Social media</div> -->
 
         <div class="footer">Sitio web creado por Claudia Guerra</div>
     </div>
 
+    <!-- Agregando el código de EmailJS (JavaScript) -->
+    <!-- Esto se hace desde emailjs, en "playground" -->
+    <script src="email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+    <script type="text/javascript">
+        emailjs.init('jK9kqYPE9HYlfPhxP')
+    </script>
 </body>
 
 </html>
