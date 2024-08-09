@@ -119,11 +119,21 @@ body {
 .btn-black {
     background-color: black;
     color: #fff;
-    padding: 20px;
-    border-radius: 30px;
+    padding: 15px;
+    border-radius: 15px;
 }
 
+.btn-black a {
+    color: #fff;
+    text-decoration: none;
+}
 .btn-black:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-black:hover a{
     background-color: white;
     color: black;
     cursor: pointer;
@@ -131,8 +141,8 @@ body {
 
 .btn-lined {
     background-color: #ffff;
-    padding: 20px;
-    border-radius: 30px;
+    padding: 15px;
+    border-radius: 15px;
     text-decoration: underline;
     border: 2px solid black;
 }
@@ -143,7 +153,6 @@ body {
     cursor: pointer;
 
 }
-
 
 /* ------------------------ Sections ---------------------- */ 
 
